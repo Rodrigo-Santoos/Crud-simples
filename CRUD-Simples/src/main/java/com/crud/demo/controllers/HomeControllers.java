@@ -1,5 +1,6 @@
 package com.crud.demo.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,7 @@ import com.crud.demo.model.Pessoa;
 @Controller
 public class HomeControllers {
 	
+	@Autowired
 	private PessoaInter pessoarepositorio;
 
 	@GetMapping("/")
